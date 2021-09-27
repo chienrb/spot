@@ -1,0 +1,72 @@
+spotmicroai:
+
+#Load Joint controller publisher
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 20
+
+#Load Joint controllers
+  # FL Controllers ------------------------------------------------------------ 
+  FL_shoulder:
+    type: effort_controllers/JointPositionController
+    joint: FL_shoulder
+    pid: {p: 100.0, i: 0.01, d: 10.0, i_clamp_min:  -1000, i_clamp_max: 1000}
+
+  FL_leg:
+    type: effort_controllers/JointPositionController
+    joint: FL_leg
+    pid: {p: 100.0, i: 0.01, d: 10.0, i_clamp_min:  -1000, i_clamp_max: 1000}
+
+  FL_foot:
+    type: effort_controllers/JointPositionController
+    joint: FL_foot
+    pid: {p: 100.0, i: 0.01, d: 10.0, i_clamp_min:  -1000, i_clamp_max: 1000}
+
+  # FR Controllers ------------------------------------------------------------ 
+  FR_shoulder:
+    type: effort_controllers/JointPositionController
+    joint: FR_shoulder
+    pid: {p: 100.0, i: 0.01, d: 10.0, i_clamp_min:  -1000, i_clamp_max: 1000}
+
+  FR_leg:
+    type: effort_controllers/JointPositionController
+    joint: FR_leg
+    pid: {p: 100.0, i: 0.01, d: 10.0, i_clamp_min:  -1000, i_clamp_max: 1000}
+
+  FR_foot:
+    type: effort_controllers/JointPositionController
+    joint: FR_foot
+    pid: {p: 100.0, i: 0.01, d: 10.0, i_clamp_min:  -1000, i_clamp_max: 1000}
+
+  # RL Controllers ------------------------------------------------------------  
+  RL_shoulder:
+    type: effort_controllers/JointPositionController
+    joint: RL_shoulder
+    pid: {p: 100.0, i: 0.01, d: 10.0, i_clamp_min:  -1000, i_clamp_max: 1000}
+
+  RL_leg:
+    type: effort_controllers/JointPositionController
+    joint: RL_leg
+    pid: {p: 100.0, i: 0.01, d: 10.0, i_clamp_min:  -1000, i_clamp_max: 1000}
+
+  RL_foot:
+    type: effort_controllers/JointPositionController
+    joint: RL_foot
+    pid: {p: 100.0, i: 0.01, d: 10.0, i_clamp_min:  -1000, i_clamp_max: 1000}
+
+  # RR Controllers ------------------------------------------------------------ 
+  RR_shoulder:
+    type: effort_controllers/JointPositionController
+    joint: RR_shoulder
+    pid: {p: 100.0, i: 0.01, d: 10.0, i_clamp_min:  -1000, i_clamp_max: 1000}
+
+  RR_leg:
+    type: effort_controllers/JointPositionController
+    joint: RR_leg
+    pid: {p: 100.0, i: 0.01, d: 10.0, i_clamp_min:  -1000, i_clamp_max: 1000}
+
+  RR_foot:
+    type: effort_controllers/JointPositionController
+    joint: RR_foot
+    pid: {p: 100.0, i: 0.01, d: 10.0, i_clamp_min:  -1000, i_clamp_max: 1000}
+
