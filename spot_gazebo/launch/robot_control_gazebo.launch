@@ -1,0 +1,4 @@
+<launch>
+  <include file="$(find spot_description)/launch/gazebo.launch"/>
+  <include file="$(find spot_controller)/launch/rest_mode.launch"/>
+</launch>

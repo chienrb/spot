@@ -1,0 +1,4 @@
+<launch>
+  <node pkg="spot_controller" type="robot_control.py" name="robot_control" output="screen"/>
+  <include file="$(find spot_controller)/launch/stand_mode.launch"/>
+</launch>

@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="spot_controller" type="stand_mode.py" name="stand_mode" output="screen"/>
+</launch>
